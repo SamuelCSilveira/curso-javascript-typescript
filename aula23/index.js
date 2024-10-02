@@ -1,18 +1,18 @@
 /*
-Operadores Lógicos
-&& -> AND -> E -> Todas as expressões precisam ser verdadeiras para retornar true
-|| -> OR -> OU
-! -> NOT -> NÃO
+&& -> false && true -> false "o valor mesmo"
+|| -> true || false -> vai retornar "o valor verdadeiro"
+
+FALSY
+false
+0
+'' "" ``
+null / undefined
+NaN
 */
-// const expressaoAnd = true && true && false && true;
-// const expressaoOr = false || false || false || false;
-// console.log(expressaoOr);
+const a = 0;
+const b = null;
+const c = false;
+const d = false;
+const e = NaN;
 
-// const usuario = 'Samuel'; // Form usuário digitou
-// const senha = '123456'; // Form usuário digitou
-
-//                       True                  False
-// const vaiLogar = usuario === 'Samuel' && senha ==='12345';
-// console.log(vaiLogar);
-
-console.log(!true);
+console.log(a || b || c || d || e);

@@ -1,35 +1,6 @@
-const verdadeira = true;
-
-// // Let tem escopo de bloco { ... bloco }
-// // Var só tem escopo de função
-
-// let nome = 'Luiz'; // criando
-// var nome2 = 'Luiz'; // criando
-
-// if (verdadeira) {
-//     let nome = 'Otávio' // criando
-//     var nome2 = 'Rogério'; // redeclarando
-
-//     if (verdadeira) {
-//         let nome = 'Outra coisa';
-//         var nome2 = 'Ronaldo'; // redeclarando
-//         console.log(nome, nome2);
-//     }
-// }
-
-// console.log(nome, nome2);
-
-// function falaOi() {
-    
-//     if (verdadeira) {
-//         let nome = 'Luiz'
-//         var sobrenome = 'Miranda';
-//     }
-    
-//     console.log(sobrenome);
-// }
-
-// falaOi();
-
-let sobrenome = 'Miranda';
-console.log(sobrenome);
+// ... rest, ... spread
+//                    0          1          2
+//                 0  1  2    0  1  2    0  1  2
+const numeros = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ];
+const [lista1, lista2, lista3] = numeros;
+console.log(lista3[2]);

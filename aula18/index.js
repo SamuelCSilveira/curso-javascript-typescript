@@ -1,16 +1,21 @@
+const pessoa1 = {
+    nome: 'Samuel',
+    sobrenome: 'Silveira',
+    idade: 29,
 
-// function soma(x = 1, y = 1){
-//     const resultado = x + y;
-//     return resultado;
-// }
+    fala(){
+        console.log(`A minha idade atual é ${this.idade}`);
+    },
 
-// const resultado = soma(4, 2);
-// console.log(resultado);
+    incrementaIdade(){
+        this.idade++;
+    }
+};
 
-const raiz = function (n){
-    return n ** 0.5;
-}
-
-console.log(raiz(9));
-console.log(raiz(16));
-console.log(raiz(25));
+pessoa1.fala();
+pessoa1.incrementaIdade();
+pessoa1.fala();
+pessoa1.incrementaIdade();
+pessoa1.fala();
+pessoa1.incrementaIdade();
+pessoa1.fala();

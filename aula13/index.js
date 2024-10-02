@@ -1,8 +1,4 @@
-let varA = 'A'; // B
-let varB = 'B'; // C
-let varC = 'C'; // A
+//               0123456789
+let umaString = "O rato roeu a roupa do rei de roma.";
 
-[varA, varB, varC] = [varB, varC, varA]
-
-
-console.log(varA, varB, varC);
+console.log(umaString.toLowerCase());

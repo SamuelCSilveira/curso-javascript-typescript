@@ -1,6 +1,13 @@
-// ... rest, ... spread
-//                    0          1          2
-//                 0  1  2    0  1  2    0  1  2
-const numeros = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ];
-const [lista1, lista2, lista3] = numeros;
-console.log(lista3[2]);
+const pessoa = {
+    nome: 'Samuel',
+    sobrenome: 'Silveira',
+    idade: 29,
+    endereco: {
+        rua: 'Rua Manoel Leonardo',
+        numero: 27
+    }
+};
+
+// Atribuição via desestruturação
+const { nome , ... resto } = pessoa;
+console.log(resto);

@@ -1,10 +1,41 @@
-console.log(!!(100 / 0));
 
-// let num2 = Math.floor(num1);
-// let num2 = Math.ceil(num1);
-// let num2 = Math.round(num1);
-// console.log(Math.max(1, 2, 3, 4, 5, -10, -50, 1500, 9, 8, 7, 6));
-// console.log(Math.min(1, 2, 3, 4, 5, -10, -50, 1500, 9, 8, 7, 6));
-// const aleatorio = Math.round(Math.random() * (10 - 5) + 5);
-// console.log(Math.PI);
-// console.log(Math.pow(2, 10));
+//               0       1        2          3      4
+const alunos = ['Luiz', 'Maria', 'João']; // Luiza, Eduardo
+
+console.log(typeof alunos);
+console.log(alunos instanceof Array);
+
+// alunos.push('Luiza');
+// alunos.push('Eduardo');
+
+// console.log(alunos.slice(0, -2));
+
+// console.log(alunos[50]);
+
+// delete alunos[1];
+// console.log(alunos[1]);
+
+// const removido = alunos.shift();
+// console.log(removido);
+// console.log(alunos);
+
+// const removido = alunos.pop();
+// console.log(removido);
+// console.log(alunos);
+
+// alunos.unshift('Luiza'); // Adiciona no começo
+// alunos.unshift('Fábio');
+
+// alunos.push('Luiza'); // Adiciona no fim
+// alunos.push('Fábio');
+
+// alunos[alunos.length] = 'Luiza'; // Adiciona no fim
+// alunos[alunos.length] = 'Fábio';
+// alunos[alunos.length] = 'Luana';
+
+// alunos[0] = 'Eduardo'; // Altera
+// alunos[3] = 'Luiza'; // Adicionando
+
+// console.log(alunos);
+// console.log(alunos[0]);
+// console.log(alunos[2]);

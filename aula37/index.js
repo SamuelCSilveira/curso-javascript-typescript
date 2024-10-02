@@ -1,19 +1,24 @@
-// For in -> lê os índices ou chaves do objeto
-
 const pessoa = {
     nome: 'Samuel',
-    sobrenome: 'Silveira',
-    idade: 29
+    sobrenome: 'Silveira'
 };
 
-for (let key in pessoa) {
-    console.log(key, pessoa[key]);
-}
+// For clássico - Geralmente com iteráveis (array ou strings)
+// For in - Retorna o índice ou chave (string, array ou objetos)
+// For of - Retorna o valor em si (iteráveis, arrays ou strings)
 
-// for (let fruta in frutas) {
-//     console.log(frutas[fruta]);
+// // for (let i = 0; i < nome.length; i++) {
+// //     console.log(nome[i]);
+// // }
+
+// // for (let i in nome) {
+// //     console.log(nome[i]);
+// // }
+
+// for (let valor of nome) {
+//     console.log(valor);
 // }
 
-// for (let i = 0; i < frutas.length; i++) {
-//     console.log(frutas[i]);
-// }
+// nome.forEach(function(valor, indice, array){
+//     console.log(valor, indice, array);
+// });

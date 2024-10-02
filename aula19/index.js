@@ -1,21 +1,13 @@
-const pessoa1 = {
+/*
+Primitivos (imutáveis) - string, number, boolean, undefined, null (bigint, symbol) - Valores copiados
+
+Referência (mutável) - array, object, function - Passados por referência
+*/
+const a = {
     nome: 'Samuel',
     sobrenome: 'Silveira',
-    idade: 29,
-
-    fala(){
-        console.log(`A minha idade atual é ${this.idade}`);
-    },
-
-    incrementaIdade(){
-        this.idade++;
-    }
 };
+const b = a;
 
-pessoa1.fala();
-pessoa1.incrementaIdade();
-pessoa1.fala();
-pessoa1.incrementaIdade();
-pessoa1.fala();
-pessoa1.incrementaIdade();
-pessoa1.fala();
+a.nome = 'João';
+console.log(a, b);
